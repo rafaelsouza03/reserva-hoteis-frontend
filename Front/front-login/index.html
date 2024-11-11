@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Status do Quarto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verifique seu Status no Hotel</h1>
+        <form id="statusForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            
+            <label for="quarto">Número do Quarto:</label>
+            <input type="number" id="quarto" name="quarto" required placeholder="Digite o número do quarto">
+            
+            <button type="submit">Verificar Status</button>
+        </form>
+
+        <div id="resultado">
+            <!-- Aqui será exibido o status do usuário -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
