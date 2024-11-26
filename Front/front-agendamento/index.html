@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento Hotel Thermas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Agendar sua Estadia</h2>
+        
+        <form id="reservationForm">
+            <!-- Data de Entrada e Saída -->
+            <div class="date-selection-container">
+                <div class="date-selection">
+                    <label for="checkin">Data de Entrada</label>
+                    <input type="date" id="checkin" name="checkin">
+                </div>
+                <div class="date-selection">
+                    <label for="checkout">Data de Saída</label>
+                    <input type="date" id="checkout" name="checkout">
+                </div>
+            </div>
+            
+            <!-- Horário de Entrada e Saída -->
+            <div class="time-selection-container">
+                <div class="time-selection">
+                    <label for="checkin-time">Hora de Entrada</label>
+                    <input type="time" id="checkin-time" name="checkin-time">
+                </div>
+                <div class="time-selection">
+                    <label for="checkout-time">Hora de Saída</label>
+                    <input type="time" id="checkout-time" name="checkout-time">
+                </div>
+            </div>
+            
+            <!-- Botão de Confirmação -->
+            <button type="submit" id="confirmBtn">Confirmar Agendamento</button>
+            <a href="../front-principal/index.html" class="button">Retornar à Página Principal</a>
+
+            <!-- Mensagem de erro -->
+            <p id="errorMsg" style="display: none; color: red;"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
